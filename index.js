@@ -13,6 +13,10 @@ function disable() {
     promise.restore();
 }
 
+function wipe() {
+    hook.clearData();
+}
+
 function getLongStack(err) {
     return hook.getLongStack(err, moduleFiles);
 }
@@ -20,5 +24,6 @@ function getLongStack(err) {
 module.exports = {
     enable,
     disable,
-    getLongStack
+    getLongStack,
+    wipe
 };

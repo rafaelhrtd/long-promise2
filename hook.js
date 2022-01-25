@@ -84,5 +84,6 @@ module.exports = {
     enable,
     disable,
     getLongStack,
-    pushErrorContext
+    pushErrorContext,
+    clearData
 };
